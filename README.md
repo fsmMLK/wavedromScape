@@ -1,21 +1,18 @@
 # wavedromScape
 
-Wavedrom's digital timing diagram extension for [Inkscape](https://inkscape.org/).
+[WaveDrom's](https://wavedrom.com/) digital timing diagram extension for [Inkscape](https://inkscape.org/).
 
 **This is a work-in-progress project. The current state is BUGGY!  =)**
 
 
 <img src="docs/images/Example_01.png" width="700px"/>
 
-<img src="docs/images/Example_02.png" width="700px"/>
+<img src="docs/images/Example_02.png" width="500px"/>
 
 References:
 
-[WaveDrom](https://wavedrom.com/)
 
 
-
-<img src="docs/images/Examples.png" width="900px"/>
 
 ## main features
 
@@ -87,7 +84,7 @@ This extension is presented in one tab that allows you write the string that spe
 
 # Examples
 
-Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://wavedrom.com/tutorial2.html), and 
+Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://wavedrom.com/tutorial2.html).
 
 
 ```
@@ -116,4 +113,4 @@ Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://waved
   { "name": "clk4", "wave": "xlh.L.Hx" }
 ]}
 ```
-<img src="docs/images/Example_02.png" width="700px"/>
+<img src="docs/images/Example_02.png" width="500px"/>
