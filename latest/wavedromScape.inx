@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Wavedrom</name>
+    <id>fsmMLK.wavedrom</id>
+    <dependency type="executable" location="inx">wavedromScape.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Base.py</dependency>
+    <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Draw.py</dependency>
+    <param name="tab" type="notebook">
+        <page name="signals" appearance="minimal" gui-text="Signals">
+            <param name="signalString" type="string" appearance="multiline" gui-text="signal string:">{ "signal": [{ "name": "a2", "wave": "01zx=" }] }</param>
+        </page>
+        <page name="Help" gui-text="Help">
+            <label>For details please refer to</label>
+            <label appearance="url">https://github.com/fsmMLK/wavedromScape</label>
+        </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="fsmMLK">
+                <submenu name="Circuit symbols"/>
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">wavedromScape.py</command>
+    </script>
+</inkscape-extension>
