@@ -7,6 +7,7 @@
     <dependency type="executable" location="extensions">inkscapeMadeEasy/inkscapeMadeEasy_Draw.py</dependency>
     <param name="tab" type="notebook">
         <page name="signals" appearance="minimal" gui-text="Signals">
+            <param name="filePath" type="path" gui-text="File:" mode="file" filetypes="txt,json"/>
             <param name="signalString" type="string" appearance="multiline" gui-text="signal string:">{ "signal": [{ "name": "a2", "wave": "01zx=" }] }</param>
         </page>
         <page name="Help" gui-text="Help">

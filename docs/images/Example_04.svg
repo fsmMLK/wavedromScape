@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 793.70081 1122.5197"
+   version="1.1"
+   id="svg101"
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   sodipodi:docname="Example_04.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview103"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.048534"
+     inkscape:cx="702.88612"
+     inkscape:cy="561.25982"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid105" />
+  </sodipodi:namedview>
+  <defs
+     id="defs98" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:label="importedSVG_X"
+     transform="translate(385.500000 489.500000)"
+     WavedromString="{&quot;reg&quot;: [ { &quot;name&quot;: &quot;IPO&quot;, &quot;bits&quot;: 8, &quot;attr&quot;: &quot;RO&quot; }, { &quot;bits&quot;: 7 }, { &quot;name&quot;: &quot;&lt;o&gt;B&lt;/o&gt;&lt;b&gt;R&lt;i&gt;K&lt;/i&gt;&lt;/b&gt;&quot;, &quot;bits&quot;: 5, &quot;attr&quot;: &quot;RW&quot;, &quot;type&quot;: 4 }, { &quot;name&quot;: &quot;CPK&quot;, &quot;bits&quot;: 1 }, { &quot;name&quot;: &quot;Clear&quot;, &quot;bits&quot;: 3 }, { &quot;bits&quot;: 8 } ] }"
+     id="g262">
+    <defs
+       id="defs6" />
+    <g
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="normal"
+       text-anchor="middle"
+       transform="translate(4.5,80.5)"
+       id="g130">
+      <g
+         stroke="black"
+         stroke-linecap="round"
+         stroke-width="1"
+         transform="translate(0,20.0)"
+         id="g72">
+        <line
+           x1="0"
+           x2="640"
+           y1="0"
+           y2="0"
+           id="line8" />
+        <line
+           x1="0"
+           x2="0"
+           y1="0"
+           y2="40.0"
+           id="line10" />
+        <line
+           x1="0"
+           x2="640"
+           y1="40.0"
+           y2="40.0"
+           id="line12" />
+        <line
+           x1="640.0"
+           x2="640.0"
+           y1="0"
+           y2="40.0"
+           id="line14" />
+        <line
+           x1="600.0"
+           x2="600.0"
+           y1="0"
+           y2="5.0"
+           id="line16" />
+        <line
+           x1="600.0"
+           x2="600.0"
+           y1="35.0"
+           y2="40.0"
+           id="line18" />
+        <line
+           x1="560.0"
+           x2="560.0"
+           y1="0"
+           y2="5.0"
+           id="line20" />
+        <line
+           x1="560.0"
+           x2="560.0"
+           y1="35.0"
+           y2="40.0"
+           id="line22" />
+        <line
+           x1="520.0"
+           x2="520.0"
+           y1="0"
+           y2="5.0"
+           id="line24" />
+        <line
+           x1="520.0"
+           x2="520.0"
+           y1="35.0"
+           y2="40.0"
+           id="line26" />
+        <line
+           x1="480.0"
+           x2="480.0"
+           y1="0"
+           y2="5.0"
+           id="line28" />
+        <line
+           x1="480.0"
+           x2="480.0"
+           y1="35.0"
+           y2="40.0"
+           id="line30" />
+        <line
+           x1="440.0"
+           x2="440.0"
+           y1="0"
+           y2="5.0"
+           id="line32" />
+        <line
+           x1="440.0"
+           x2="440.0"
+           y1="35.0"
+           y2="40.0"
+           id="line34" />
+        <line
+           x1="400.0"
+           x2="400.0"
+           y1="0"
+           y2="5.0"
+           id="line36" />
+        <line
+           x1="400.0"
+           x2="400.0"
+           y1="35.0"
+           y2="40.0"
+           id="line38" />
+        <line
+           x1="360.0"
+           x2="360.0"
+           y1="0"
+           y2="5.0"
+           id="line40" />
+        <line
+           x1="360.0"
+           x2="360.0"
+           y1="35.0"
+           y2="40.0"
+           id="line42" />
+        <line
+           x1="320.0"
+           x2="320.0"
+           y1="0"
+           y2="40.0"
+           id="line44" />
+        <line
+           x1="280.0"
+           x2="280.0"
+           y1="0"
+           y2="5.0"
+           id="line46" />
+        <line
+           x1="280.0"
+           x2="280.0"
+           y1="35.0"
+           y2="40.0"
+           id="line48" />
+        <line
+           x1="240.0"
+           x2="240.0"
+           y1="0"
+           y2="5.0"
+           id="line50" />
+        <line
+           x1="240.0"
+           x2="240.0"
+           y1="35.0"
+           y2="40.0"
+           id="line52" />
+        <line
+           x1="200.0"
+           x2="200.0"
+           y1="0"
+           y2="5.0"
+           id="line54" />
+        <line
+           x1="200.0"
+           x2="200.0"
+           y1="35.0"
+           y2="40.0"
+           id="line56" />
+        <line
+           x1="160.0"
+           x2="160.0"
+           y1="0"
+           y2="5.0"
+           id="line58" />
+        <line
+           x1="160.0"
+           x2="160.0"
+           y1="35.0"
+           y2="40.0"
+           id="line60" />
+        <line
+           x1="120.0"
+           x2="120.0"
+           y1="0"
+           y2="5.0"
+           id="line62" />
+        <line
+           x1="120.0"
+           x2="120.0"
+           y1="35.0"
+           y2="40.0"
+           id="line64" />
+        <line
+           x1="80.0"
+           x2="80.0"
+           y1="0"
+           y2="5.0"
+           id="line66" />
+        <line
+           x1="80.0"
+           x2="80.0"
+           y1="35.0"
+           y2="40.0"
+           id="line68" />
+        <line
+           x1="40.0"
+           x2="40.0"
+           y1="0"
+           y2="40.0"
+           id="line70" />
+      </g>
+      <g
+         text-anchor="middle"
+         id="g128">
+        <g
+           id="g126">
+          <g
+             transform="translate(0,20.0)"
+             id="g78">
+            <rect
+               height="40.0"
+               style="fill-opacity:0.1"
+               width="280.0"
+               x="40.0"
+               y="0"
+               id="rect74" />
+            <rect
+               height="40.0"
+               style="fill-opacity:0.1;fill:hsl(170,100%,50%)"
+               width="40.0"
+               x="0.0"
+               y="0"
+               id="rect76" />
+          </g>
+          <g
+             transform="translate(20.0,16.0)"
+             id="g100">
+            <text
+               x="600.0"
+               id="text82"><tspan
+                 id="tspan80">0</tspan></text>
+            <text
+               x="320.0"
+               id="text86"><tspan
+                 id="tspan84">7</tspan></text>
+            <text
+               x="280.0"
+               id="text90"><tspan
+                 id="tspan88">8</tspan></text>
+            <text
+               x="40.0"
+               id="text94"><tspan
+                 id="tspan92">14</tspan></text>
+            <text
+               x="0.0"
+               id="text98"><tspan
+                 id="tspan96">15</tspan></text>
+          </g>
+          <g
+             transform="translate(20.0,44.0)"
+             id="g114">
+            <text
+               x="460.0"
+               id="text104"><tspan
+                 id="tspan102">IPO</tspan></text>
+            <text
+               id="text112"><tspan
+                 text-decoration="overline"
+                 id="tspan106">B</tspan><tspan
+                 font-weight="bold"
+                 id="tspan108">R</tspan><tspan
+                 font-style="italic"
+                 font-weight="bold"
+                 id="tspan110">K</tspan></text>
+          </g>
+          <g
+             transform="translate(20.0,80)"
+             id="g124">
+            <text
+               x="460.0"
+               id="text118"><tspan
+                 id="tspan116">RO</tspan></text>
+            <text
+               id="text122"><tspan
+                 id="tspan120">RW</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       font-family="sans-serif"
+       font-size="14"
+       font-weight="normal"
+       text-anchor="middle"
+       transform="translate(4.5,0.5)"
+       id="g260">
+      <g
+         stroke="black"
+         stroke-linecap="round"
+         stroke-width="1"
+         transform="translate(0,20.0)"
+         id="g194">
+        <line
+           x1="0"
+           x2="640"
+           y1="0"
+           y2="0"
+           id="line132" />
+        <line
+           x1="0"
+           x2="0"
+           y1="0"
+           y2="40.0"
+           id="line134" />
+        <line
+           x1="0"
+           x2="640"
+           y1="40.0"
+           y2="40.0"
+           id="line136" />
+        <line
+           x1="640.0"
+           x2="640.0"
+           y1="0"
+           y2="40.0"
+           id="line138" />
+        <line
+           x1="600.0"
+           x2="600.0"
+           y1="0"
+           y2="5.0"
+           id="line140" />
+        <line
+           x1="600.0"
+           x2="600.0"
+           y1="35.0"
+           y2="40.0"
+           id="line142" />
+        <line
+           x1="560.0"
+           x2="560.0"
+           y1="0"
+           y2="5.0"
+           id="line144" />
+        <line
+           x1="560.0"
+           x2="560.0"
+           y1="35.0"
+           y2="40.0"
+           id="line146" />
+        <line
+           x1="520.0"
+           x2="520.0"
+           y1="0"
+           y2="5.0"
+           id="line148" />
+        <line
+           x1="520.0"
+           x2="520.0"
+           y1="35.0"
+           y2="40.0"
+           id="line150" />
+        <line
+           x1="480.0"
+           x2="480.0"
+           y1="0"
+           y2="40.0"
+           id="line152" />
+        <line
+           x1="440.0"
+           x2="440.0"
+           y1="0"
+           y2="40.0"
+           id="line154" />
+        <line
+           x1="400.0"
+           x2="400.0"
+           y1="0"
+           y2="5.0"
+           id="line156" />
+        <line
+           x1="400.0"
+           x2="400.0"
+           y1="35.0"
+           y2="40.0"
+           id="line158" />
+        <line
+           x1="360.0"
+           x2="360.0"
+           y1="0"
+           y2="5.0"
+           id="line160" />
+        <line
+           x1="360.0"
+           x2="360.0"
+           y1="35.0"
+           y2="40.0"
+           id="line162" />
+        <line
+           x1="320.0"
+           x2="320.0"
+           y1="0"
+           y2="40.0"
+           id="line164" />
+        <line
+           x1="280.0"
+           x2="280.0"
+           y1="0"
+           y2="5.0"
+           id="line166" />
+        <line
+           x1="280.0"
+           x2="280.0"
+           y1="35.0"
+           y2="40.0"
+           id="line168" />
+        <line
+           x1="240.0"
+           x2="240.0"
+           y1="0"
+           y2="5.0"
+           id="line170" />
+        <line
+           x1="240.0"
+           x2="240.0"
+           y1="35.0"
+           y2="40.0"
+           id="line172" />
+        <line
+           x1="200.0"
+           x2="200.0"
+           y1="0"
+           y2="5.0"
+           id="line174" />
+        <line
+           x1="200.0"
+           x2="200.0"
+           y1="35.0"
+           y2="40.0"
+           id="line176" />
+        <line
+           x1="160.0"
+           x2="160.0"
+           y1="0"
+           y2="5.0"
+           id="line178" />
+        <line
+           x1="160.0"
+           x2="160.0"
+           y1="35.0"
+           y2="40.0"
+           id="line180" />
+        <line
+           x1="120.0"
+           x2="120.0"
+           y1="0"
+           y2="5.0"
+           id="line182" />
+        <line
+           x1="120.0"
+           x2="120.0"
+           y1="35.0"
+           y2="40.0"
+           id="line184" />
+        <line
+           x1="80.0"
+           x2="80.0"
+           y1="0"
+           y2="5.0"
+           id="line186" />
+        <line
+           x1="80.0"
+           x2="80.0"
+           y1="35.0"
+           y2="40.0"
+           id="line188" />
+        <line
+           x1="40.0"
+           x2="40.0"
+           y1="0"
+           y2="5.0"
+           id="line190" />
+        <line
+           x1="40.0"
+           x2="40.0"
+           y1="35.0"
+           y2="40.0"
+           id="line192" />
+      </g>
+      <g
+         text-anchor="middle"
+         id="g258">
+        <g
+           id="g256">
+          <g
+             transform="translate(0,20.0)"
+             id="g200">
+            <rect
+               height="40.0"
+               style="fill-opacity:0.1;fill:hsl(170,100%,50%)"
+               width="160.0"
+               x="480.0"
+               y="0"
+               id="rect196" />
+            <rect
+               height="40.0"
+               style="fill-opacity:0.1"
+               width="320.0"
+               x="0.0"
+               y="0"
+               id="rect198" />
+          </g>
+          <g
+             transform="translate(20.0,16.0)"
+             id="g230">
+            <text
+               x="600.0"
+               id="text204"><tspan
+                 id="tspan202">16</tspan></text>
+            <text
+               x="480.0"
+               id="text208"><tspan
+                 id="tspan206">19</tspan></text>
+            <text
+               x="440.0"
+               id="text212"><tspan
+                 id="tspan210">20</tspan></text>
+            <text
+               x="400.0"
+               id="text216"><tspan
+                 id="tspan214">21</tspan></text>
+            <text
+               x="320.0"
+               id="text220"><tspan
+                 id="tspan218">23</tspan></text>
+            <text
+               x="280.0"
+               id="text224"><tspan
+                 id="tspan222">24</tspan></text>
+            <text
+               x="0.0"
+               id="text228"><tspan
+                 id="tspan226">31</tspan></text>
+          </g>
+          <g
+             transform="translate(20.0,44.0)"
+             id="g248">
+            <text
+               x="540.0"
+               id="text238"><tspan
+                 text-decoration="overline"
+                 id="tspan232">B</tspan><tspan
+                 font-weight="bold"
+                 id="tspan234">R</tspan><tspan
+                 font-style="italic"
+                 font-weight="bold"
+                 id="tspan236">K</tspan></text>
+            <text
+               x="440.0"
+               id="text242"><tspan
+                 id="tspan240">CPK</tspan></text>
+            <text
+               x="360.0"
+               id="text246"><tspan
+                 id="tspan244">Clear</tspan></text>
+          </g>
+          <g
+             transform="translate(20.0,80)"
+             id="g254">
+            <text
+               x="540.0"
+               id="text252"><tspan
+                 id="tspan250">RW</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

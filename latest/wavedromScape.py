@@ -1,15 +1,15 @@
 #!/usr/bin/python
 
+import json
 import math
 import os
-import sys
+
+import yaml
+from lxml import etree
 
 import inkscapeMadeEasy.inkscapeMadeEasy_Base as inkBase
-import inkscapeMadeEasy.inkscapeMadeEasy_Draw as inkDraw
-
 # pip install wavedrom
-import wavedrom
-import tempfile
+import wavedrompy as wavedrom
 
 # ---------------------------------------------
 # noinspection PyUnboundLocalVariable,PyDefaultArgument,PyAttributeOutsideInit
@@ -19,7 +19,8 @@ class TimingDiagram(inkBase.inkscapeMadeEasy):
 
         self.arg_parser.add_argument("--tab", type=str, dest="tab", default="signals")
 
-        self.arg_parser.add_argument("--signalString", type=str, dest="signalString", default='123')
+        self.arg_parser.add_argument("--signalString", type=str, dest="signalString", default='{ "assign":[  ["out", ["~", "a"]  ]]}')
+        self.arg_parser.add_argument("--filePath", type=str, dest="filePath", default='')
 
     def effect(self):
 
@@ -33,27 +34,57 @@ class TimingDiagram(inkBase.inkscapeMadeEasy):
         position[0] = int(math.ceil(position[0] / 10.0)) * 10
         position[1] = int(math.ceil(position[1] / 10.0)) * 10
 
-        #removes \n \r characters
-        cleanedWaveString = ' '.join(so.signalString.replace(r'\n','').replace(r'\r','').split())
+        # load data
+        if os.path.isfile(so.filePath):
+            with open(so.filePath, 'r') as file:
+                inputString = file.read()
+        else:
+            inputString = so.signalString
 
-        #craete diagram
-        svgObj = wavedrom.render(source=cleanedWaveString,output=[])
+        # fix quotes, necessary for wavedrompy (Json)
+        cleanedWaveString = self.fixQuotes(inputString)
 
-        # create temp svg file and export diagram
-        tmpf = tempfile.NamedTemporaryFile(mode='w', prefix='tempDiagram_', suffix='.svg', delete=False)
-        tempFilePath = tmpf.name
-        tmpf.close()
-        svgObj.saveas(tempFilePath)
+        #self.displayMsg(cleanedWaveString)
 
-        print(tempFilePath)
-        #import SVG
-        diagramGroup = self.importSVG(root_layer,tempFilePath, createGroup=True, position=position, scaleFactor=1.0, unifyDefs=True)
+        # craete diagram svg
+        svgObj = wavedrom.render(source=cleanedWaveString, output=[])
+        # svgObj.saveas('/home/fernando/temporary.svg')
 
-        #add config
-        self.addAttribute( diagramGroup, 'WavedromString', cleanedWaveString,forceWrite=True)
+        # converts to lxml etree for cleanup
+        svg = etree.fromstring(svgObj.tostring())
 
-        #remove temp file
-        os.remove(tempFilePath)
+        # removes unitary squares at the origin that seems useless and cause problems
+        if True:
+            for elem in svg.iter():
+                # removes namespace
+                elemTag = etree.QName(elem).localname
+                if elemTag == 'rect':
+                    if elem.attrib['x'] == '0' and elem.attrib['y'] == '0' and elem.attrib['height'] == '1' and elem.attrib['width'] == '1':
+                        elem.getparent().remove(elem)
+
+        # remove title elements
+        if True:
+            for elem in svg.iter():
+                # removes namespace
+                elemTag = etree.QName(elem).localname
+                if elemTag == 'title':
+                    elem.getparent().remove(elem)
+
+        #add to inkscape document
+        diagramGroup = self.createGroup(root_layer, label='importedSVG')
+        for elem in svg:
+            diagramGroup.append(elem)
+
+        center = self.getCenter(diagramGroup)
+        self.moveElement(diagramGroup, position - center)
+
+        self.addAttribute(diagramGroup, 'WavedromString', cleanedWaveString, forceWrite=True)
+
+    def fixQuotes(self, inputString):
+        # fix double quotes in the input file. opening with yaml and dumping with json fix the issues.
+        yamlCode = yaml.load(inputString, Loader=yaml.FullLoader)
+        string = json.dumps(yamlCode, indent=4)
+        return string
 
 if __name__ == '__main__':
 
@@ -61,10 +92,12 @@ if __name__ == '__main__':
     sp = TimingDiagram()
 
     if debugMode:
-        sp.run([r'--signalString={ "signal": [{ "name": "a1", "wave": "01.zx=ud.23.456789" }] }',r'/home/fernando/lixo.svg'], output=os.devnull)
+        tempFile='/home/fernando/temp_debugA.svg'
+        sp.createEmptySVG(tempFile)
 
-        #save the result
-        sp.document.write('/home/fernando/out.svg')
+        # sp.run([r'--signalString={ "assign":[  ["out", ["~", "a"]  ]]}',r'/home/fernando/lixo.svg'], output=os.devnull)
+        sp.run([r'--filePath=/home/fernando/diagram_01.txt', tempFile], output=os.devnull)
+        sp.document.write('/home/fernando/temp_debug_out.svg')
 
     else:
         sp.run()
