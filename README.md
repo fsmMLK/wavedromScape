@@ -232,7 +232,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_11.png" width="700px"/>
+<img src="docs/images/Example_11.png" width="600px"/>
 
 ```
 { signal: [
@@ -244,7 +244,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_12.png" width="700px"/>
+<img src="docs/images/Example_12.png" width="800px"/>
 
 ```
 { signal: [
@@ -256,7 +256,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 }
 ```
 
-<img src="docs/images/Example_13.png" width="400px"/>
+<img src="docs/images/Example_13.png" width="350px"/>
 
 ```
 {signal: [
@@ -307,7 +307,7 @@ foot: {text:
 }
 ```
 
-<img src="docs/images/Example_15.png" width="700px"/>
+<img src="docs/images/Example_15.png" width="800px"/>
 
 ```
 { signal: [
