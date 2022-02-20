@@ -97,7 +97,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_01.png" width="500px"/>
+<img src="docs/images/Example_01.png" width="700px"/>
 
 ```
 { "signal": [
@@ -114,7 +114,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_02.png" width="500px"/>
+<img src="docs/images/Example_02.png" width="450px"/>
 
 ```
 {"reg": [
@@ -128,7 +128,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 }
 ```
 
-<img src="docs/images/Example_04.png" width="500px"/>
+<img src="docs/images/Example_04.png" width="700px"/>
 
 ```
 { "assign":[
@@ -141,7 +141,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_05.png" width="500px"/>
+<img src="docs/images/Example_05.png" width="200px"/>
 
 ```
 { "assign":[
@@ -152,7 +152,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_06.png" width="500px"/>
+<img src="docs/images/Example_06.png" width="100px"/>
 
 ```
 { "assign":[
@@ -163,7 +163,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_07.png" width="500px"/>
+<img src="docs/images/Example_07.png" width="100px"/>
 
 ```
 { "assign":[
@@ -178,7 +178,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_08.png" width="500px"/>
+<img src="docs/images/Example_08.png" width="200px"/>
 
 ```
 { "assign":[
@@ -197,7 +197,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_09.png" width="500px"/>
+<img src="docs/images/Example_09.png" width="400px"/>
 
 ```
 { "signal": [
@@ -209,7 +209,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_10.png" width="500px"/>
+<img src="docs/images/Example_10.png" width="700px"/>
 
 ```
 { "signal": [
@@ -232,7 +232,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_11.png" width="500px"/>
+<img src="docs/images/Example_11.png" width="700px"/>
 
 ```
 { signal: [
@@ -244,7 +244,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 ]}
 ```
 
-<img src="docs/images/Example_12.png" width="500px"/>
+<img src="docs/images/Example_12.png" width="700px"/>
 
 ```
 { signal: [
@@ -256,7 +256,7 @@ Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](h
 }
 ```
 
-<img src="docs/images/Example_13.png" width="500px"/>
+<img src="docs/images/Example_13.png" width="400px"/>
 
 ```
 {signal: [
@@ -290,7 +290,7 @@ foot: {text:
 }
 ```
 
-<img src="docs/images/Example_14.png" width="500px"/>
+<img src="docs/images/Example_14.png" width="700px"/>
 
 ```
 { signal: [
@@ -307,7 +307,7 @@ foot: {text:
 }
 ```
 
-<img src="docs/images/Example_15.png" width="500px"/>
+<img src="docs/images/Example_15.png" width="700px"/>
 
 ```
 { signal: [
