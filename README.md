@@ -84,12 +84,16 @@ Compatibility table
 
 The extension can be found under `extensions > fsmMLK > Circuit symbols` menu.
 
-This extension is presented in one tab that allows you write the string that specifies the diagram
+This extension is presented in one tab that allows you write the string that specifies the diagram or specify a text file (.txt) with the description of the diagram. Check the [Examples](#examples) section and the tutorials [here](https://wavedrom.com/tutorial.html) and [here](https://wavedrom.com/tutorial2.html)
+
+## Important notice
+The command line uses Python's JSON interpreter that is more restrictive (coherent with the JSOC spec), while the JavaScript json is more relaxed:
+
+ -Extra comma (,) not supported at end of lists or dictionaries
 
 # Examples
 
-Check examples in `doc/images` folder.
-Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](https://wavedrom.com/tutorial2.html). 
+All examples presented here were extracted from the tutorials [here](https://wavedrom.com/tutorial.html) and [here](https://wavedrom.com/tutorial2.html) and from [wavedrompy](https://github.com/wallento/wavedrompy) page. Check these links for further information.
 
 
 ```
