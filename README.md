@@ -9,11 +9,6 @@
 
 <img src="docs/images/Example_02.png" width="500px"/>
 
-References:
-
-
-
-
 ## main features
 
 The main features of this extension are
@@ -37,7 +32,9 @@ Compatibility table
 ## Requirements
 
 - You will need [inkscapeMadeEasy](https://github.com/fsmMLK/inkscapeMadeEasy) plugin installed. Check the compatibility table above to know the version you need.
-- You will need [wavedrom python module](https://github.com/wallento/wavedrompy). You can easily install it using pip: ``pip install wavedrom``
+
+
+**wavedromScape** depends on [wavedrompy](https://github.com/wallento/wavedrompy) python module. A custom built version of wavedrompy is already incorporated in this extension. You do **NOT** need to install it.
 
 ## Installation procedure
 
@@ -71,8 +68,10 @@ Compatibility table
              ┃
              ┣━━ wavedromScape        <-- wavedromScape folder
              ┋    ┣━━ wavedromScape.inx
-                  ┗━━ wavedromScape.py
-        
+                  ┣━━ wavedromScape.py
+                  ┗━━ wavedrompy        <-- wavedrompy folder
+                         ┋
+       
         NOTE: You might have other sub folders inside the extensions directory. They don't interfere with the plugin.
         ```
 
@@ -84,7 +83,8 @@ This extension is presented in one tab that allows you write the string that spe
 
 # Examples
 
-Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://wavedrom.com/tutorial2.html).
+Check examples in `doc/images` folder.
+Check also the tutorials [here](https://wavedrom.com/tutorial.html) and [here](https://wavedrom.com/tutorial2.html). 
 
 
 ```
@@ -96,8 +96,8 @@ Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://waved
  { "name": "DQ",   "wave": "z.........5555z.", "data": "D0 D1 D2 D3" }
 ]}
 ```
-<img src="docs/images/Example_01.png" width="700px"/>
 
+<img src="docs/images/Example_01.png" width="500px"/>
 
 ```
 { "signal": [
@@ -113,4 +113,216 @@ Check tutorials [here](https://wavedrom.com/tutorial.html), [here](https://waved
   { "name": "clk4", "wave": "xlh.L.Hx" }
 ]}
 ```
+
 <img src="docs/images/Example_02.png" width="500px"/>
+
+```
+{"reg": [
+  { "name": "IPO",   "bits": 8, "attr": "RO" },
+  {                  "bits": 7 },
+  { "name": "<o>B</o><b>R<i>K</i></b>",   "bits": 5, "attr": "RW", "type": 4 },
+  { "name": "CPK",   "bits": 1 },
+  { "name": "Clear", "bits": 3 },
+  { "bits": 8 }
+  ]
+}
+```
+
+<img src="docs/images/Example_04.png" width="500px"/>
+
+```
+{ "assign":[
+  ["out",
+    ["|",
+      ["&", ["~", "a"], "b"],
+      ["&", ["~", "b"], "a"]
+    ]
+  ]
+]}
+```
+
+<img src="docs/images/Example_05.png" width="500px"/>
+
+```
+{ "assign":[
+  ["g0", ["^", "b0", "b1"]],
+  ["g1", ["^", "b1", "b2"]],
+  ["g2", ["^", "b2", "b3"]],
+  ["g3", ["=", "b3"]]
+]}
+```
+
+<img src="docs/images/Example_06.png" width="500px"/>
+
+```
+{ "assign":[
+    ["b3", "g3"],
+  ["b2", ["^", "b3", "g2"]],
+  ["b1", ["^", "b2", "g1"]],
+  ["b0", ["^", "b1", "g0"]]
+]}
+```
+
+<img src="docs/images/Example_07.png" width="500px"/>
+
+```
+{ "assign":[
+    ["z", ["~&",
+    ["~^", ["~", "p0"], ["~", "q0"]],
+    ["~^", ["~", "p1"], ["~", "q1"]],
+    ["~^", ["~", "p2"], ["~", "q2"]],
+    "...",
+    ["~^", ["~", "p7"], ["~", "q7"]],
+    ["~","~en"]
+  ]]
+]}
+```
+
+<img src="docs/images/Example_08.png" width="500px"/>
+
+```
+{ "assign":[
+    ["out",
+    ["XNOR",
+      ["NAND",
+        ["INV", "a"],
+        ["NOR", "b", ["BUF","c"]]
+      ],
+      ["AND",
+        ["XOR", "d", "e", ["OR","f","g"]],
+        "h"
+      ]
+    ]
+  ]
+]}
+```
+
+<img src="docs/images/Example_09.png" width="500px"/>
+
+```
+{ "signal": [
+  { "name": "clk",         "wave": "p.....|..." },
+  { "name": "Data",        "wave": "x.345x|=.x", "data": ["head", "body", "tail", "data"] },
+  { "name": "Request",     "wave": "0.1..0|1.0" },
+  {},
+  { "name": "Acknowledge", "wave": "1.....|01." }
+]}
+```
+
+<img src="docs/images/Example_10.png" width="500px"/>
+
+```
+{ "signal": [
+  {    "name": "clk",   "wave": "p..Pp..P"},
+  ["Master",
+    ["ctrl",
+      {"name": "write", "wave": "01.0...."},
+      {"name": "read",  "wave": "0...1..0"}
+    ],
+    {  "name": "addr",  "wave": "x3.x4..x", "data": "A1 A2"},
+    {  "name": "wdata", "wave": "x3.x....", "data": "D1"   }
+  ],
+  {},
+  ["Slave",
+    ["ctrl",
+      {"name": "ack",   "wave": "x01x0.1x"}
+    ],
+    {  "name": "rdata", "wave": "x.....4x", "data": "Q2"}
+  ]
+]}
+```
+
+<img src="docs/images/Example_11.png" width="500px"/>
+
+```
+{ signal: [
+  { name: "CK",   wave: 'P.......',                                              period: 2  },
+  { name: "CMD",  wave: "x.3x=x4x=x=x=x=x", data: "RAS NOP CAS NOP NOP NOP NOP", phase: 0.5 },
+  { name: "ADDR", wave: "x.=x..=x........", data: "ROW COL",                     phase: 0.5 },
+  { name: "DQS",  wave: "z.......0.1010z." },
+  { name: "DQ",   wave: "z.........5555z.", data: "D0 D1 D2 D3" }
+]}
+```
+
+<img src="docs/images/Example_12.png" width="500px"/>
+
+```
+{ signal: [
+  { name: "clk",     wave: "p...." },
+  { name: "Data",    wave: "x345x",  data: ["head", "body", "tail"] },
+  { name: "Request", wave: "01..0" }
+  ],
+  config: { hscale: 1 }
+}
+```
+
+<img src="docs/images/Example_13.png" width="500px"/>
+
+```
+{signal: [
+  {name:'clk', wave: 'p.....PPPPp....' },
+  {name:'dat', wave: 'x....2345x.....', data: 'a b c d' },
+  {name:'req', wave: '0....1...0.....' }
+],
+head: {text:
+  ['tspan',
+    ['tspan', {class:'error h1'}, 'error '],
+    ['tspan', {class:'warning h2'}, 'warning '],
+    ['tspan', {class:'info h3'}, 'info '],
+    ['tspan', {class:'success h4'}, 'success '],
+    ['tspan', {class:'muted h5'}, 'muted '],
+    ['tspan', {class:'h6'}, 'h6 '],
+    'default ',
+    ['tspan', {fill:'pink', 'font-weight':'bold', 'font-style':'italic'}, 'pink-bold-italic']
+  ]
+},
+foot: {text:
+  ['tspan', 'E=mc',
+    ['tspan', {dy:'-5'}, '2'],
+    ['tspan', {dy: '5'}, '. '],
+    ['tspan', {'font-size':'25'}, 'B '],
+    ['tspan', {'text-decoration':'overline'},'over '],
+    ['tspan', {'text-decoration':'underline'},'under '],
+    ['tspan', {'baseline-shift':'sub'}, 'sub '],
+    ['tspan', {'baseline-shift':'super'}, 'super ']
+  ],tock:-5
+}
+}
+```
+
+<img src="docs/images/Example_14.png" width="500px"/>
+
+```
+{ signal: [
+  { name: 'A', wave: '01........0....',  node: '.a........j' },
+  { name: 'B', wave: '0.1.......0.1..',  node: '..b.......i' },
+  { name: 'C', wave: '0..1....0...1..',  node: '...c....h..' },
+  { name: 'D', wave: '0...1..0.....1.',  node: '....d..g...' },
+  { name: 'E', wave: '0....10.......1',  node: '.....ef....' }
+  ],
+  edge: [
+    'a~b t1', 'c-~a t2', 'c-~>d time 3', 'd~-e',
+    'e~>f', 'f->g', 'g-~>h', 'h~>i some text', 'h~->j'
+  ]
+}
+```
+
+<img src="docs/images/Example_15.png" width="500px"/>
+
+```
+{ signal: [
+  { name: 'A', wave: '01..0..',  node: '.a..e..' },
+  { name: 'B', wave: '0.1..0.',  node: '..b..d.', phase:0.5 },
+  { name: 'C', wave: '0..1..0',  node: '...c..f' },
+  {                              node: '...g..h' },
+  {                              node: '...I..J',  phase:0.5 },
+  { name: 'D', wave: '0..1..0',  phase:0.5 }
+  ],
+  edge: [
+    'b-|a t1', 'a-|c t2', 'b-|-c t3', 'c-|->e t4', 'e-|>f more text',
+    'e|->d t6', 'c-g', 'f-h', 'g<->h 3 ms', 'I+J 5 ms'
+  ]
+}
+```
+
+<img src="docs/images/Example_16.png" width="500px"/>

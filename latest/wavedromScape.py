@@ -8,7 +8,6 @@ import yaml
 from lxml import etree
 
 import inkscapeMadeEasy.inkscapeMadeEasy_Base as inkBase
-# pip install wavedrom
 import wavedrompy as wavedrom
 
 # ---------------------------------------------
