@@ -7,7 +7,12 @@
 
 <img src="docs/images/Example_01.png" width="700px"/>
 
-<img src="docs/images/Example_02.png" width="500px"/>
+<img src="docs/images/Example_04.png" width="700px"/>
+
+<img src="docs/images/Example_15.png" width="800px"/>
+
+<img src="docs/images/Example_16.png" width="500px"/>
+
 
 ## main features
 
