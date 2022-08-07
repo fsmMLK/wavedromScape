@@ -4,10 +4,10 @@
 import sys
 
 import svgwrite
-from attrdict import AttrDict
 from six import string_types
 from svgwrite.base import BaseElement
 from svgwrite.etree import etree
+from .attrdict import AttrDict
 
 if sys.version_info < (3, 0):
     from HTMLParser import HTMLParser
@@ -17,14 +17,14 @@ else:
 
 class TspanParser(HTMLParser, object):
     tags = {
-        'o': {'text_decoration': 'overline'},
-        'ins': {'text_decoration': 'underline'},
-        'sub': {'baseline_shift': 'sub'},
-        'sup': {'baseline_shift': 'super'},
-        'b': {'font_weight': 'bold'},
-        'i': {'font_style': 'italic'},
-        's': {'text_decoration': 'line-through'},
-        'tt': {'font_family': 'monospace'},
+        "o": {"text_decoration": "overline"},
+        "ins": {"text_decoration": "underline"},
+        "sub": {"baseline_shift": "sub"},
+        "sup": {"baseline_shift": "super"},
+        "b": {"font_weight": "bold"},
+        "i": {"font_style": "italic"},
+        "s": {"text_decoration": "line-through"},
+        "tt": {"font_family": "monospace"},
     }
 
     def __init__(self):
@@ -54,6 +54,7 @@ class TspanParser(HTMLParser, object):
 
 class JsonMLElement(BaseElement):
     """Class that generates xml elements from jsonml."""
+
     def __init__(self, source, **extra):
         """Constructs from jsonml source."""
         self._jsonml = self.extract_element(source)

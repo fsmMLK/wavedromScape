@@ -41,9 +41,9 @@ class TimingDiagram(inkBase.inkscapeMadeEasy):
             inputString = so.signalString
 
         # fix quotes, necessary for wavedrompy (Json)
-        cleanedWaveString = self.fixQuotes(inputString)
-
-        #self.displayMsg(cleanedWaveString)
+        # cleanedWaveString = self.fixQuotes(inputString)
+        cleanedWaveString=inputString
+        self.displayMsg(cleanedWaveString)
 
         # craete diagram svg
         svgObj = wavedrom.render(source=cleanedWaveString, output=[])
@@ -81,7 +81,7 @@ class TimingDiagram(inkBase.inkscapeMadeEasy):
 
     def fixQuotes(self, inputString):
         # fix double quotes in the input file. opening with yaml and dumping with json fix the issues.
-        yamlCode = yaml.load(inputString, Loader=yaml.FullLoader)
+        yamlCode = yaml.load(inputString, Loader=yaml.SafeLoader)
         string = json.dumps(yamlCode, indent=4)
         return string
 
@@ -95,7 +95,7 @@ if __name__ == '__main__':
         sp.createEmptySVG(tempFile)
 
         # sp.run([r'--signalString={ "assign":[  ["out", ["~", "a"]  ]]}',r'/home/fernando/lixo.svg'], output=os.devnull)
-        sp.run([r'--filePath=/home/fernando/diagram_01.txt', tempFile], output=os.devnull)
+        sp.run([r'--filePath=/home/fernando/Example_01.txt', tempFile], output=os.devnull)
         sp.document.write('/home/fernando/temp_debug_out.svg')
 
     else:
