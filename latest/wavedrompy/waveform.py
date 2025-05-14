@@ -13,7 +13,7 @@ from itertools import chain
 
 import svgwrite
 from six import string_types
-from wavedrom.tspan import JsonMLElement
+from .tspan import JsonMLElement
 
 from . import waveskin
 from .attrdict import AttrDict
