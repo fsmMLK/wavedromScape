@@ -36,7 +36,8 @@ Compatibility table
 
 ## Requirements
 
-- You will need [inkscapeMadeEasy](https://github.com/fsmMLK/inkscapeMadeEasy) plugin installed. Check the compatibility table above to know the version you need.
+- You will need [inkscapeMadeEasy](https://github.com/fsmMLK/inkscapeMadeEasy) plugin installed. Check the 
+  compatibility table above to know the version you need. The following python modules are required: yaml, svgwrite. Make sure your python installation has these modules.
 
 
 **wavedromScape** depends on [wavedrompy](https://github.com/wallento/wavedrompy) python module. A custom built version of wavedrompy is already incorporated in this extension. You do **NOT** need to install it.

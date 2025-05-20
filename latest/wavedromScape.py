@@ -38,12 +38,12 @@ class TimingDiagram(inkBase.inkscapeMadeEasy):
             with open(so.filePath, 'r') as file:
                 inputString = file.read()
         else:
-            inputString = so.signalString
+            inputString = so.signalString.replace('\\n', '')
 
         # fix quotes, necessary for wavedrompy (Json)
         # cleanedWaveString = self.fixQuotes(inputString)
         cleanedWaveString=inputString
-        self.displayMsg(cleanedWaveString)
+        #self.displayMsg(cleanedWaveString)
 
         # craete diagram svg
         svgObj = wavedrom.render(source=cleanedWaveString, output=[])
